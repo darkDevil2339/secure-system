@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form method="POST">
+
+    {{ form.hidden_tag() }}
+
+    {{ form.email.label }}<br>
+    {{ form.email() }}<br><br>
+
+    {{ form.password.label }}<br>
+    {{ form.password() }}<br><br>
+
+    {{ form.submit() }}
+
+</form>
+
+<a href="/register">Create Account</a>
+
+</body>
+</html>
